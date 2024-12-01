@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Subset Sum Finder</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+ .fables-header button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+.fables-header button:hover {
+      background-color: #0056b3;
+    }
+  
+  </style>
+</head>
+
+<body>
+
+ <!-- Start Header -->
+<div class="fables-header fables-after-overlay overlay-lighter index-traingle bg-rules">
+  <div class="container">
+    <div class="row align-items-center"> <!-- Utilisez align-items-center pour centrer verticalement -->
+      <div class="col-md-8 col-lg-7 mr-auto index-carousel"> <!-- Réduisez la largeur de la colonne pour laisser de l'espace à droite -->
+        <div class="owl-carousel owl-theme default-carousel nav-0 z-index mt-md-4 mt-xl-5 pt-md-4 pt-xl-5 dots-0 pb-md-5">
+          <!-- Insert the HTML form content here -->
+          <form action="/find_subsets" method="post" class="pt-0 mt-0 pt-xl-5 mt-xl-5 wow slideInUp">
+            <h1 class="fables-main-text-color font-weight-bold mb-4">Subset Sum Finder</h1>
+            <label for="elements">Enter elements (space-separated):</label>
+            <input type="text" name="elements" required class="form-control mb-3">
+            <label for="target">Enter target sum:</label>
+            <input type="number" name="target" required class="form-control mb-3">
+            <br>
+            <button type="submit" class="btn fables-second-background-color fables-second-border-color white-color rounded-0 mr-4 px-3 px-md-4 py-2 bg-hover-transparent fables-second-hover-color">Find Subsets</button>
+          </form>
+        </div>
+      </div>
+      <!-- Placez la colonne pour l'image ici -->
+      <div class="col-md-4 col-lg-5 text-center mt-3"> <!-- Ajoutez une classe pour déplacer l'image un peu vers le bas -->
+        <img src="static/images/subset of sum1.png" alt="Image Description" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- jQery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

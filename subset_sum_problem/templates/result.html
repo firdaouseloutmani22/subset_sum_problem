@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subset Sum Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .subsets {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .subsets p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 3px;
+            border-left: 5px solid #007bff;
+            color: #333;
+        }
+
+        p.no-results {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br/><br/><br/>
+        <h1>Subset Sum Results</h1>
+        {% if subsets %}
+            <div class="subsets">
+                <p>Sous-ensembles trouvés :</p>
+                <ul>
+                    {% for subset in subsets %}
+                        <li>{{ subset }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <p class="no-results">Aucun sous-ensemble avec la somme cible n'a été trouvé.</p>
+        {% endif %}
+        <p>Temps d'exécution: {{ execution_time }} secondes</p>
+    </div>
+</body>
+</html>
